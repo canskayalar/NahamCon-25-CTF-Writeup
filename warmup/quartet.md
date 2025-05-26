@@ -6,7 +6,7 @@
 
 ![image 6](simage-6.png)
 
-### Aşamalar
+### Aşamalar ve FLAG
 
 ![image 7](simage-7.png)
 
