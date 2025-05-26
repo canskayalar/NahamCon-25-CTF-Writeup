@@ -1,14 +1,25 @@
-# 🛰️ OSINT Write-up: Nahamsec CTF - Sending Mixed Signals
+# OSINT Write-up: Nahamsec CTF - Sending Mixed Signals
 
-## 📌 Challenge Adı
+##  Challenge Adı
 **Sending Mixed Signals**
 
-## 🚩 İlk Aşamalar
+## Soru
+![alt text](image-2.png)
+
+### Aşamalar
 
 Challenge URL'si:
 ```
 http://challenge.nahamcon.com:30691/
 ```
+
+##  Verilen site
+
+
+![alt text](image.png)
+
+---
+
 
 Challenge, üç parçalı bir veri doğrulama sistemine sahipti:  
 - `part1`: Şifre
@@ -17,7 +28,7 @@ Challenge, üç parçalı bir veri doğrulama sistemine sahipti:
 
 ---
 
-## 🔍 Hardcoded Credential
+##  Hardcoded Credential
 
 İlk olarak kaynak kod analizleri ve NVD üzerinden yapılan araştırmalarda sabit bir credential’a ulaşıldı:
 
@@ -27,7 +38,7 @@ part1 = "enRR8UVVywXYbFkqU#QDPRkO"
 
 Bu bilgi, `ArchiveConstants.kt` dosyasında yer almakta ve CVE-2025-47730 gibi kaynaklarda da doğrulanmış.
 
-## 📧 Geliştirici E-Postası
+## Geliştirici E-Postası
 
 Kod tabanında e-posta adresi olarak şu bilgi bulundu:
 
@@ -39,12 +50,12 @@ Bu e-posta, geliştirici **Moti Amar**'a aittir.
 
 ---
 
-## 📦 Credential'ın Dahil Olduğu Sürüm
+##  Credential'ın Dahil Olduğu Sürüm
 
 Credential'ın dahil edildiği sürüm şu şekilde tespit edildi. Yazılan python scripti ile brute force saldırısı yapılmıştır:
 
 ```
-Release_7.2.4.12
+Release_5.4.11.20
 ```
 
 GitHub repo: [`micahflee/TM-SGNL-Android`](https://github.com/micahflee/TM-SGNL-Android)
@@ -54,7 +65,7 @@ https://github.com/micahflee/TM-SGNL-Android/commit/ddc9f6d5f62e69333d6792f6fd49
 
 ---
 
-## 🤖 Brute Force Script
+##  Brute Force Script
 
 Aşağıdaki script ile GitHub üzerinden tüm tag’ler çekilerek deneme yapıldı:
 
@@ -113,23 +124,20 @@ if __name__ == "__main__":
     valid_version = try_versions(tags)
 ```
 
----
 
-## 🌐 Elde Edilen Site
-
-Doğru sürüm girildiğinde bir bağlantı elde edildi:  
-![alt text](image.png)
-
-Bu link özel bir görsele ya da sayfaya yönlendirdi.
+### Brute Force Sounucu
+![alt text](image-3.png)
 
 ---
 
-## ❌ Son Soruda Hata
 
-Tüm bu bilgileri doğru girip flag'e ulaştım. Ancak son soruda hatalı cevap vererek flag'i kaçırdım.  
-Bazen teknik doğruluk yetmiyor, dikkat de gerekiyor 😅
+# FLAG
+
+![alt text](image-1.png)
 
 ---
+
+
 
 ## 🔗 Kaynaklar
 
