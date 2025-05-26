@@ -5,7 +5,7 @@
 
 ## Soru:
 
-![alt text](image-4.png)
+![image](simage-4.png)
 
 ### Aşamalar
 
@@ -18,4 +18,4 @@ rules endpointine gittim kaynak kodunu açıp okudum
 
 # FLAG
 
-![alt text](image-3.png)
+![image 3](simage-3.png)

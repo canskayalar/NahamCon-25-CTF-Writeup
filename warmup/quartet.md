@@ -4,10 +4,10 @@
 
 ## Soru:
 
-![alt text](image-6.png)
+![image 6](simage-6.png)
 
 ### Aşamalar
 
-![alt text](image-7.png)
+![image 7](simage-7.png)
 
 

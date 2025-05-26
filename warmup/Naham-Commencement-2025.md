@@ -5,7 +5,7 @@
 
 ## Soru:
 
-![alt text](image-5.png)
+![alt text](simage-5.png)
 
 ### Aşamalar
 
@@ -18,10 +18,10 @@ Challenge verilen bir web sitesinde kullanıcı bilgilerini bulup login olduktan
 
 ## Kaynak Kodu İncelemesi
 
-![alt text](image-1.png)
+![alt text](simage-1.png)
 
 
-![alt text](image-2.png)
+![alt text](simage-2.png)
 
 a fonksiyonu 16 harflik Caesar Cipher yapıyor
 
@@ -39,4 +39,4 @@ password:LetTheGamesBegin2025
 
 # FLAG
 
-![alt text](image.png)
+![alt text](simage-10.png)

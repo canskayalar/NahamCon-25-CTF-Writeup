@@ -4,7 +4,7 @@
 **Technical Support**
 
 ## Soru:
-![alt text](image-9.png)
+![image 9](simage-9.png)
 
 # FLAG
-![alt text](image-8.png)
+![image 8](simage-8.png)
